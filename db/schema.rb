@@ -27,10 +27,8 @@ ActiveRecord::Schema.define(version: 4) do
   end
 
   create_table "song_genres", force: :cascade do |t|
-    t.integer  "song_id"
-    t.integer  "genre_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer "song_id"
+    t.integer "genre_id"
   end
 
   create_table "songs", force: :cascade do |t|
